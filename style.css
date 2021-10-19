@@ -1,0 +1,427 @@
+/* CSS Document */
+
+/* Font Config */
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap');
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	
+}
+
+.main_body{
+	background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.0)),url(https://blogger.googleusercontent.com/img/a/AVvXsEgBsla04PguzGmrctQhROgP7M_3FOHNb1IyEyCUCX3FAn4ptnXIHBZdB-9zbX8bKcwb0FYShDy29hL3WB2Z2rRgD8aTwELdpr0XQPx-cvRetoNekn3nSH5dEIYktVkuipIAtOzeOIew3wLspwuXdXsx_u7_TxTw5Vr2DFT9HjgrdAdXIRQNJCOOq5qm=s16000);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #009BFF;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #004484;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+/*	background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEizbUCttHuzehYa6_Xzah4T0ew2gtFj7xCq1WsVb__p8ZVt0QZr4K44poNji3OnyYA8YgBYuO6odEeHagDnPFd9fYGgOOT1MT8JWGdcQjv4XxyomFh3m0wrnqNe38lpIeMJFX9wKtNeSmg5sIFBJ8JvOes2Gcvoi7u9eri4PhTKB8ZdoMmI-U2rA-vK=s1920);*/	
+	background: #2980b9;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*header starts here*/
+
+header{
+	width: 98%;
+	margin: auto;
+	position: fixed;
+	padding: 20px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10;
+	/*transition: 0.5s;*/
+}
+
+header.sticky{
+	padding: 3px 15px;
+	background: #3498db;
+	box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+	background: rgba(52, 152, 219,0.5);
+	backdrop-filter: blur(5px);
+	padding: 5px 15px;
+	border: 2px solid rgba(52, 152, 219,1.0);
+	border-radius: 35px;
+	width: 175px;
+	cursor: pointer;
+}
+
+.nav_links{
+	flex: 1;
+	text-align: right;
+}
+
+.menu_icon{
+	display: none;
+}
+
+header ul{
+	text-align: right;
+}
+
+header ul li{
+	list-style: none;
+	display: inline-block;
+	/*margin: 0 20;*/
+	padding: 20px 10px;
+	position: relative;
+
+
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	margin: 0px 20px;
+	border: 2px solid #e74c3c;
+	border-radius: 25px;
+	background: #c0392b;
+	padding: 10px 20px;
+	transition: 0.5s;
+}
+
+header ul li a:hover{
+	border-radius: 15px;
+	background: #d35400;
+	padding: 15px 25px;
+}
+
+/*title starts here*/
+
+.content{
+	padding-top: 20px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.title{
+	background: rgba(255,255,255,0.25);
+	backdrop-filter: blur(15px);
+	margin: auto;
+	width: 60%;
+	padding: 30px 0px;
+	box-shadow: 3px 6px 15px rgba(0,0,0,0.75);
+	text-align: center;
+	border: 2px solid #FFFFFF;
+	border-radius: 25px;
+}
+
+.title h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	color: #c0392b;
+	filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.5));
+}
+
+.title p{
+	font-family: 'Montserrat', sans-serif;
+	color: #d35400;
+	font-weight: 400;
+	margin: 10px auto;
+	letter-spacing: 5px;
+	filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.5));
+}	
+
+.button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 50px;
+	border-radius: 35px;
+	font-family: 'Bebas Neue', cursive;
+	/*font-weight: 700px;*/
+	font-size: 25px;
+	border: 4px solid #8e44ad;
+	background: transparent;
+	color: #ecf0f1;
+	cursor: pointer;
+	filter: drop-shadow(1px 2px 4px #000);
+	transition: 0.5s;
+}
+
+.button:hover{
+	border: 4px solid #8e44ad;
+	background: #8e44ad;
+	transition: 0.75s;
+}
+
+/*popular posts section*/
+
+.latest_post{
+	text-align: center;
+	height: auto;
+	width: 100%;
+}
+
+.latest_post h2{
+	background: #c0392b;
+	padding: 5px 15px;
+	font-family: 'Bebas Neue';
+	font-size: 60px;
+}
+
+.container{
+    max-width: 1200px;
+	padding: 20px 0px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.blog_content{
+    width: 20rem;
+    height: 35rem;
+    background: rgba(255,255,255,0.20);
+	backdrop-filter: blur(20px);
+	border: 2px solid #fff;
+	border-radius: 25px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+    overflow: hidden;
+    margin: auto;
+	transition: 0.3s;
+}
+
+.blog_content:hover{
+	background: rgba(236, 240, 241,0.8);
+}
+
+.image_holder{
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.post_image{
+    width: 100%;
+    height: auto;
+	cursor: pointer;
+}
+
+.blog_title{
+	padding: 20px 5px;
+	text-align: center;
+}
+
+.blog_title h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.blog_title .description{
+	overflow: hidden;
+	max-height: 144px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.blog_title_footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.btn_blog{
+	width: 135px;
+	height: 45px;
+	text-align: center;
+	margin: 20px 50px;
+	border-radius: 35px;
+	border: 2px solid #f1c40f;
+	background: #f1c40f;
+	filter: drop-shadow(2px 4px 6px #000);
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.btn_blog:hover{
+	background: #d35400;
+	border: 2px solid #d35400;
+	filter: drop-shadow(4px 8px 10px #000);
+}
+
+.comment_icon{
+	width: 24px;
+	height: 24px;
+	margin-left: 50px;
+}
+
+/*blog posts section*/
+
+.main_blog_post{
+	text-align: center;
+	background: #ecf0f1;
+}
+
+.main_blog_post.container{
+	background: #2ecc71;
+	border: #FFFFFF;
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: flex;
+	filter: drop-shadow(4px 6px 10px #000);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.main_blog_post .container:hover{
+	filter: drop-shadow(6px 8px 15px #000);
+	background: #27ae60;
+}
+
+.main_blog_post h1{
+	background: #f1c40f;
+	padding: 5px 15px;
+	font-family: 'Bebas Neue';
+	font-size: 60px;
+}
+
+.blog_post_image{
+	margin-left: 20px;
+	width: 15rem;
+	flex: 0 0 15rem;
+	filter: drop-shadow(2px 4px 5px #000);
+}
+
+.blog_post_image img{
+	border-radius: 20px 0px 20px 0px;
+	max-width: 100%;
+}
+
+.blog_post_content{
+	padding: 10px;
+}
+
+.blog_post_content h2{
+	font-family: 'Lato', sans-serif;
+}
+
+.blog_post_content p{
+	font-family: 'Lato', sans-serif;
+}
+
+.blog_footer{
+	position: absolute;
+	display: flex;
+	bottom: 0;
+	right: 0;
+	margin: 15px;
+	margin-right: 20px;
+	background: #f39c12;
+	border: 2px solid #e67e22;
+	border-radius: 25px;
+	align-items: center;
+	padding: 10px 10px;
+	filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.5));
+}
+
+.blog_footer_comment_icon{
+	width: 20px;
+	height: auto;
+	margin-left: 40px;
+	margin-right: 5px;
+}
+
+@media screen and (max-width : 700px ){
+	/*
+	body{
+		position: fixed; 
+		overflow-y: scroll;
+		width: 100%;
+	}*/
+	
+	header{
+		padding: 5px 15px 100vh 15px;
+	}
+	
+	header.sticky{
+		padding: 5px 15px 100vh 15px;
+		background: rgba(0,0,0,0.00);
+	}
+	
+	.content h1 {
+		font-size: 22px;
+	}
+	
+	.content p{
+		font-size: 10px;
+	}
+	
+	.nav_links ul li{
+		display: grid;
+	}
+	
+	.nav_links ul li a{
+		padding: 25px 15px;
+		font-size: 20px;
+	}
+
+	.nav_links{
+		position: absolute;
+		background: #1abc9c;
+		height: 100vh;
+		width: 300px;
+		top: 0;
+		right: -300px;
+		text-align: left;
+		z-index: 2000;
+		margin-bottom: 100vh;
+		transition: 1s;
+	}
+	
+	.menu_icon{
+		display: block;
+		margin: 10px;
+		width: 48px;
+	}
+	
+	.nav_links ul{
+		padding: 20px;
+	}
+	
+	
+}
